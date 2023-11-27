@@ -11,7 +11,7 @@ int check_cycle(listint_t *list)
 {
 	void *add = list;
 
-	while (list && list->next->next)
+	while (list)
 	{
 		list = list->next;
 		if (add == list)

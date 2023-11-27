@@ -14,7 +14,7 @@ int check_cycle(listint_t *list)
 	while (list)
 	{
 		list = list->next;
-		if (add == list)
+		if ((char *)add == (char *)list)
 			return (1);
 	}
 	return (0);

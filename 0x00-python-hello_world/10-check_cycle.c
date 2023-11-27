@@ -13,7 +13,7 @@ int check_cycle(listint_t *list)
 
 	if (list == NULL || list->next == NULL)
 		return (0);
-	while (list)
+	while (list && list->next && list->next->next)
 	{
 		list = list->next;
 		if ((char *)add == (char *)list)

@@ -11,6 +11,8 @@ int check_cycle(listint_t *list)
 {
 	void *add = list;
 
+	if (list == NULL || list->next == NULL)
+		return (0);
 	while (list)
 	{
 		list = list->next;

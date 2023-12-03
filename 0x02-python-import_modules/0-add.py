@@ -1,16 +1,8 @@
 #!/usr/bin/python3
+if __name__ == '__main__':
+    from add_0 import add
 
-def add(a, b):
-    """My addition function
+    a = 1
+    b = 2
 
-    Args:
-        a: first arg.
-        b: second arg.
-
-    Return:
-        the return vakue. a + b.
-    """
-    return (a + b)
-
-
-print('1 + 2 = {}'.format(add(1, 2)))
+    print('{:d} + {:d} = {:d}'.format(a, b, add(1, 2)))

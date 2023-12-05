@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-def print_matrix_integer(matrix=[]):
-    if matrix is None:
+def print_matrix_integer(matrix=[[]]):
+    if matrix == [[]] :
         return
     a = 0
     counter = 0

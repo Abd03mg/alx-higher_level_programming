@@ -2,6 +2,6 @@
 """ Class Rectangle """
 
 
-class rectangle:
-    """ define class rectange."""
+class Rectangle:
+    """ define class Rectange."""
     pass

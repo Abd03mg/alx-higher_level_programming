@@ -12,10 +12,11 @@ class Rectangle:
         height: input value of height.
     """
     def __init__(self, width=0, height=0):
-        
-        self.width = width
-        self.height = height
-        
+        """instanation with width and height attr"""
+
+        self.__width = width
+        self.__height = height
+
         @property
         def width(self):
             """ width attr getter

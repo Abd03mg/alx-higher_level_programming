@@ -10,4 +10,4 @@ def to_json_string(my_str):
         python object.
     '''
     load = __import__("json").loads
-    return (load(my_obj))
+    return (load(my_str))

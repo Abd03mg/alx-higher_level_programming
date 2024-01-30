@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 ''' Write to file. '''
+
+
 def write_file(filename="", text=""):
     ''' function that writes string to file.
     Args:

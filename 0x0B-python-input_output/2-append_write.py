@@ -2,8 +2,8 @@
 ''' Append to file. '''
 
 
-def write_file(filename="", text=""):
-    ''' function that writes string to file.
+def append_write(filename="", text=""):
+    ''' function that append string to file.
     Args:
         filename: name of file to be written.
         text: text to be written.

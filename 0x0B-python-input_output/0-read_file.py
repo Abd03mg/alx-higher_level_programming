@@ -1,4 +1,4 @@
-#!/sur/bin/python3
+#!/usr/bin/python3
 def read_file(filename=""):
     ''' Function that reads file and prints it to stdout.
         Args:

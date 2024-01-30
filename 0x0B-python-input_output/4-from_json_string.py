@@ -2,7 +2,7 @@
 ''' From JSON string to object'''
 
 
-def to_json_string(my_str):
+def from_json_string(my_str):
     ''' function that convert from json to object.
     Args:
         my_object: input JSON string.

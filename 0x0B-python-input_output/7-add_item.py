@@ -5,14 +5,11 @@
 if __name__ == "__main__":
     json = __import__("json")
     argv = __import__("sys").argv
-    isfile = __import__("os").path.isfile
-
-    with open("add_item.json", "a+", encoding="utf-8") as f:
-        if (json.load(f)):
+    try:
+        with open("add_item.json", "w+", encoding="utf-8") as f:
             item = list(json.load(f))
-        else:
+            print(item)
+            except json.decoder.JSONDecodeError:
             item = []
-
-        for i in range(len(argv)):
-            item.append(argv[i])
-        json.dump(item, f)
+            item += argv[1:]
+            json.dump(item, f)

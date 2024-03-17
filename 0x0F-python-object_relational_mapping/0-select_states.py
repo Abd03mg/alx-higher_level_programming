@@ -9,6 +9,6 @@ if __name__ == "__main__":
     db = MySQLdb.connect(
             host="localhost", user=arg[1], passwd=arg[2], db=arg[3])
     cur = db.cursor()
-    cur.excecute("SELECT * FROM htbn_0e_usa")
+    cur.execute("SELECT * FROM states")
     for i in cur.fetchall():
         print(i)

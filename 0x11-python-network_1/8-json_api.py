@@ -9,7 +9,7 @@ if __name__ == "__main__":
     q = argv[1] if len(argv) == 2 else ""
     r = requests.post("http://0.0.0.0:5000/search_user", data={'q': q})
     try:
-        js = eval(r.text)
+        js = dict(eval(r.text))
         if (not js):
             print("No result")
         else:

@@ -15,4 +15,4 @@ if __name__ == "__main__":
         else:
             print("[{}] {}".format(js.get('id'), js.get('name')))
     except Exception:
-        print("Not aa valid JSON")
+        print("Not a valid JSON")

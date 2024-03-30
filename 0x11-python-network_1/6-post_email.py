@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ Python script that Uses
-'request' module to get X-Request-Id value."""
+'request' to POST request."""
 
 if __name__ == "__main__":
     import requests

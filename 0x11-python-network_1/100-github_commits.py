@@ -6,9 +6,10 @@ Github repo"""
 import requests
 from sys import argv
 if __name__ == '__main__':
-    req = requests.get(
-            "https://api.github.com/repos/{}/{}/commits"
-            .format(argv[1], argv[2])).json()
+    url = "https://api.github.com/repos/{}/{}/commits"\
+            .format(argv[1], argv[2])
+
+    req = requests.get(url).json()
 
     try:
         for x in range(10):

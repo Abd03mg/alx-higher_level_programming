@@ -3,10 +3,9 @@
 Github repo"""
 
 
+import requests
+from sys import argv
 if __name__ == '__main__':
-    import requests
-    from sys import argv
-
     req = requests.get(
             "https://api.github.com/repos/{}/{}/commits"
             .format(argv[1], argv[2])).json()

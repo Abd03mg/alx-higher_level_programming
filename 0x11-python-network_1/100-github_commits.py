@@ -7,7 +7,7 @@ import requests
 from sys import argv
 if __name__ == '__main__':
     url = "https://api.github.com/repos/{}/{}/commits"\
-            .format(argv[1], argv[2])
+            .format(argv[2], argv[1])
 
     req = requests.get(url).json()
     lim = 10 if len(req) > 10 else len(req)

@@ -10,11 +10,7 @@ if __name__ == '__main__':
             .format(argv[1], argv[2])
 
     req = requests.get(url).json()
-
-    try:
-        for x in range(10):
-            print("{}: {}".format(req[x]
-                  .get('sha'), req[x].get('commit').get('author').get('name')))
-
-    except Exception:
-        pass
+    lim = 10 if len(req) > 10 else len(req)
+    for x in range(lim):
+        print("{}: {}".format(req[x]
+              .get('sha'), req[x].get('commit').get('author').get('name')))
